@@ -1,0 +1,7 @@
+FROM java:8-jdk
+
+COPY target/products-0.0.1-SNAPSHOT-jar-with-dependencies.jar /demo.jar
+EXPOSE 8080 
+# set the startup command to execute the jar
+CMD ["java", "-jar", "/demo.jar"]
+
